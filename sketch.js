@@ -8,7 +8,11 @@ var scl;
 var choose = 0;
 
 function setup() {
-  createCanvas(500, 500);
+  var cnv = createCanvas(500, 500);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+
   scl = width / (2 * axisSize);
 }
 
